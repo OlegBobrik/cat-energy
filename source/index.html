@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
@@ -8,7 +8,7 @@
 
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo.svg" width="226" height="30" alt="Cat Energy">
+        <img class="page-header__logo-image" src="img/logo.svg" width="226" height="30" alt="Cat Energy logo">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -27,14 +27,13 @@
     </header>
 
     <main class="page-main">
-
       <h1 class="visually-hidden">Интернет-магазин "Cat Energy"</h1>
 
       <section class="choice">
         <h2 class="visually-hidden">Подбор программы</h2>
         <b class="choice__title">Функциональное питание для котов</b>
         <p class="choice__slogan">Занялся собой? Займись котом!</p>
-        <button class="choice__button">Подобрать программу</button>
+        <a class="choice__button" href="form.html">Подобрать программу</a>
       </section>
 
       <section class="food">
@@ -84,7 +83,56 @@
         </ul>
       </section>
 
+      <section class="example">
+        <h2 class="visually-hidden">Результат</h2>
+        <b class="example__title">Живой пример</b>
+        <p class="example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок!
+          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example__result stats">
+          <p class="stats__weight">Снижение веса <span>5 кг</span></p>
+          <p class="stats__day">Затрачено времени <span>60 дней</span></p>
+          <p class="stats__cost">Затраты на питание: <span>15 000 руб.</span></p>
+        </div>
+      </section>
+
+      <section class="address">
+        <h2 class="visually-hidden">Где мы находимся?</h2>
+        <b class="address__coop">Приглашаем к сотрудничеству дилеров!</b>
+        <address class="address__location">
+          ул. Большая Конюшенная, д. 19/8<br>
+          Санкт-Петербург
+        </address>
+        <div class="address__map">
+          <!-- here will map -->
+        </div>
+      </section>
     </main>
+
+    <footer class="page-footer">
+        <img class="page-footer__logo" src="img/catenergy.svg" width="100" height="50" alt="Cat Energy logo">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--vk">В Контакте</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--in">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--fb">Facebook</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__title">HTML Academy</span>
+          <a class="copyright" href="#">
+            <img  class="copyright__image" src="img/academy.svg" width="40" height="40" alt="HTML Academy logo">
+          </a>
+        </div>
+      </footer>
 
   </body>
 </html>
