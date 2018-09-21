@@ -33,25 +33,98 @@
           Заполните анкету и мы подберем программу питания для вашего кота
         </p>
         <form class="choice__form form-choice" action="https://echo.htmlacademy.ru" method="get">
-          <div class="form-choice__characters characters">
-            <label class="characters__name">Имя:<sup>*</sup>
-              <input type="text" name="cat-name">
-            </label>
-            <label class="characters__weight">Вес (кг):<sup>*</sup>
-              <input type="text" name="cat-weight">
-            </label>
-            <label class="characters__age">Возраст (лет):
-              <input type="text" name="cat-age">
-            </label>
-          </div>
-          <div class="form-choice__checkbox checkbox">
-            <p><input class="checkbox__select" name="weight-down" type="radio" checked>Похудение</p>
-            <p><input class="checkbox__select" name="weight-up" type="radio">Набор массы</p>
-            <p><input class="checkbox__select" name="dont-know" type="radio">Не знаю (нужен ваш совет)</p>
-          </div>
+          <fieldset class="form-choice__characters characters">
+            <legend class="visually-hidden">Данные животного</legend>
+            <p>
+              <label class="characters__label">Имя:<sup>*</sup>
+                <input class="characters__input" type="text" name="cat-name">
+              </label>
+            </p>
+            <p>
+              <label class="characters__label">Вес (кг):<sup>*</sup>
+                <input class="characters__input" type="text" name="cat-weight">
+              </label>
+            </p>
+            <p>
+              <label class="characters__label">Возраст (лет):
+                <input class="characters__input" type="text" name="cat-age">
+              </label>
+            </p>
+          </fieldset>
+          <fieldset class="form-choice__program program">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <p>
+              <label class="program__label">
+                <input class="program__select" name="program" type="radio" value="weight-down" checked>Похудение
+              </label>
+            </p>
+            <p>
+              <label class="program__label">
+                <input class="program__select" name="program" type="radio" value="weight-up">Набор массы
+              </label>
+            </p>
+            <p>
+              <label class="program__label">
+                <input class="program__select" name="program" type="radio" value="dont-know">Не знаю (нужен ваш совет)
+              </label>
+            </p>
+          </fieldset>
+          <fieldset class="form-choice__contacts contacts">
+            <legend class="contacts__title">Контактные данные (кладелец кота)</legend>
+            <p>
+              <label class="contacts__label">E-mail:<sup>*</sup>
+                <input class="contacts__email" type="email" name="e-mail">
+              </label>
+            </p>
+            <p>
+              <label class="contacts__label">Телефон:<sup>*</sup>
+                <input class="contacts__phone" type="tel" name="phone-number">
+              </label>
+            </p>
+          </fieldset>
+          <fieldset class="form-choice__comments comments">
+            <legend class="comments__title">Комментарий</legend>
+            <textarea class="comments__textarea" name="comments" cols="30" rows="10"></textarea>
+          </fieldset>
+          <fieldset class="form-choice__additional additional">
+            <legend class="additional__title">Дополнительно</legend>
+            <p>
+              <label class="additional__label">
+                <input class="additional__checkbox" name="additional" type="checkbox" value="sugar" checked>Сахарозаменитель
+              </label>
+            </p>
+            <p>
+              <label class="additional__label">
+                <input class="additional__checkbox" name="additional" type="checkbox" value="water">Питьевая вода
+              </label>
+            </p>
+            <p>
+              <label class="additional__label">
+                <input class="additional__checkbox" name="additional" type="checkbox" value="milk">Молоко
+              </label>
+            </p>
+            <p>
+              <label class="additional__label">
+                <input class="additional__checkbox" name="additional" type="checkbox" value="vitamins">Витамины
+              </label>
+            </p>
+          </fieldset>
           <input class="form-choice__button" type="submit" value="Отправить заявку">
+          <span class="form-choice__note"><sup>*</sup>­­ ­− Обязательные поля</span>
         </form>
       </section>
+
+      <section class="address">
+          <h2 class="visually-hidden">Где мы находимся?</h2>
+          <b class="address__coop">Приглашаем к сотрудничеству дилеров!</b>
+          <address class="address__location">
+            ул. Большая Конюшенная, д. 19/8<br>
+            Санкт-Петербург
+          </address>
+          <div class="address__map">
+            <!-- here will map -->
+          </div>
+        </section>
     </main>
 
     <footer class="page-footer">
