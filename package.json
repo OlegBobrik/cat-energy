@@ -1,0 +1,39 @@
+{
+  "name": "cat-energy",
+  "version": "1.0.0",
+  "description": "HTML-Academy: Cat Energy",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "stylelint": "^9.5.0",
+    "stylelint-config-recommended": "^2.1.0"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+
+  "config": {
+    "source": {
+      "sass": "source/sass/style.scss"
+    },
+    "build": {
+      "css": "build/css/"
+    }
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegBobrik/cat-energy.git"
+  },
+  "author": {
+    "name": "Oleg V. Bobrik",
+    "email": "olegvbobrik@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegBobrik/cat-energy/issues"
+  },
+  "homepage": "https://github.com/OlegBobrik/cat-energy#readme"
+}
