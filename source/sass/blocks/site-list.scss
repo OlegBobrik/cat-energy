@@ -1,0 +1,18 @@
+.site-list__item {
+  display: inline;
+}
+
+.site-list__link {
+
+  &--active {
+    border-bottom: 2px solid $green;
+  }
+
+  &:hover {
+    color: $link-dark-hover;
+  }
+
+  &:active {
+    color: $link-dark-down;
+  }
+}

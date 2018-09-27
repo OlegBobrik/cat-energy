@@ -1,0 +1,15 @@
+.choice {
+  font-family: $oswald;
+  color: $black;
+}
+
+.choice__title {
+  font-size: $biggest;
+  line-height: 60px;
+  font-weight: inherit;
+}
+
+.choice__slogan {
+  font-size: $medium;
+  text-transform: uppercase;
+}
