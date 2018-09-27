@@ -1,4 +1,10 @@
-body {
-  font-size: 16px;
-  background: #ffffff;
-}
+@import "global/fonts";
+@import "global/variables";
+@import "global/visually-hidden.scss";
+@import "global/base";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/choice";
+@import "blocks/food";
+@import "blocks/weight-type";
