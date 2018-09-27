@@ -1,13 +1,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var config = require('./package.json').config;
-
-gulp.task('test', function() {
-  console.log(config);
-});
 
 gulp.task('sass', function () {
-  return gulp.src(config.source.sass)
+  return gulp.src('source/sass/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('source/css'));
 });
