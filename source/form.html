@@ -26,7 +26,7 @@
       </nav>
     </header>
 
-    <main class="form-main">
+    <main class="page-main">
       <section class="choice">
         <h2 class="visually-hidden">Подбор программы</h2>
         <p class="choice__description">
@@ -35,52 +35,52 @@
         <form class="choice__form form-choice" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="form-choice__characters characters">
             <legend class="visually-hidden">Данные животного</legend>
-            <p>
+            <div>
               <label class="characters__label">Имя:<sup>*</sup>
                 <input class="characters__input" type="text" name="cat-name">
               </label>
-            </p>
-            <p>
+            </div>
+            <div>
               <label class="characters__label">Вес (кг):<sup>*</sup>
                 <input class="characters__input" type="text" name="cat-weight">
               </label>
-            </p>
-            <p>
+            </div>
+            <div>
               <label class="characters__label">Возраст (лет):
                 <input class="characters__input" type="text" name="cat-age">
               </label>
-            </p>
+            </div>
           </fieldset>
           <fieldset class="form-choice__program program">
             <legend class="visually-hidden">Выбор программы</legend>
-            <p>
+            <div>
               <label class="program__label">
                 <input class="program__select" name="program" type="radio" value="weight-down" checked>Похудение
               </label>
-            </p>
-            <p>
+            </div>
+            <div>
               <label class="program__label">
                 <input class="program__select" name="program" type="radio" value="weight-up">Набор массы
               </label>
-            </p>
-            <p>
+            </div>
+            <div>
               <label class="program__label">
                 <input class="program__select" name="program" type="radio" value="dont-know">Не знаю (нужен ваш совет)
               </label>
-            </p>
+            </div>
           </fieldset>
           <fieldset class="form-choice__contacts contacts">
             <legend class="contacts__title">Контактные данные (кладелец кота)</legend>
-            <p>
+            <div>
               <label class="contacts__label">E-mail:<sup>*</sup>
                 <input class="contacts__email" type="email" name="e-mail">
               </label>
-            </p>
-            <p>
+            </div>
+            <div>
               <label class="contacts__label">Телефон:<sup>*</sup>
                 <input class="contacts__phone" type="tel" name="phone-number">
               </label>
-            </p>
+            </div>
           </fieldset>
           <fieldset class="form-choice__comments comments">
             <legend class="comments__title">Комментарий</legend>
@@ -88,26 +88,26 @@
           </fieldset>
           <fieldset class="form-choice__additional additional">
             <legend class="additional__title">Дополнительно</legend>
-            <p>
+            <div>
               <label class="additional__label">
                 <input class="additional__checkbox" name="additional" type="checkbox" value="sugar" checked>Сахарозаменитель
               </label>
-            </p>
-            <p>
+            </div>
+            <div>
               <label class="additional__label">
                 <input class="additional__checkbox" name="additional" type="checkbox" value="water">Питьевая вода
               </label>
-            </p>
-            <p>
+            </div>
+            <div>
               <label class="additional__label">
                 <input class="additional__checkbox" name="additional" type="checkbox" value="milk">Молоко
               </label>
-            </p>
-            <p>
+            </div>
+            <div>
               <label class="additional__label">
                 <input class="additional__checkbox" name="additional" type="checkbox" value="vitamins">Витамины
               </label>
-            </p>
+            </div>
           </fieldset>
           <input class="form-choice__button" type="submit" value="Отправить заявку">
           <span class="form-choice__note"><sup>*</sup>­­ ­− Обязательные поля</span>
@@ -115,16 +115,16 @@
       </section>
 
       <section class="address">
-          <h2 class="visually-hidden">Где мы находимся?</h2>
-          <b class="address__coop">Приглашаем к сотрудничеству дилеров!</b>
-          <address class="address__location">
-            ул. Большая Конюшенная, д. 19/8<br>
-            Санкт-Петербург
-          </address>
-          <div class="address__map">
-            <!-- here will map -->
-          </div>
-        </section>
+        <h2 class="visually-hidden">Где мы находимся?</h2>
+        <b class="address__coop">Приглашаем к сотрудничеству дилеров!</b>
+        <address class="address__location">
+          ул. Большая Конюшенная, д. 19/8<br>
+          Санкт-Петербург
+        </address>
+        <div class="address__map">
+          <!-- here will map -->
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
