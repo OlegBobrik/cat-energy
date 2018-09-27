@@ -13,16 +13,15 @@
   "scripts": {
     "start": "gulp"
   },
-
   "config": {
     "source": {
       "sass": "source/sass/style.scss"
     },
     "build": {
+      "html": "build",
       "css": "build/css/"
     }
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OlegBobrik/cat-energy.git"
