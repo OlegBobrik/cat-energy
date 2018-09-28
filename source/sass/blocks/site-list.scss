@@ -3,10 +3,11 @@
 }
 
 .site-list__link {
-
-  &--active {
-    border-bottom: 2px solid $green;
-  }
+  font-size: $medium;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
 
   &:hover {
     color: $link-dark-hover;
@@ -14,5 +15,15 @@
 
   &:active {
     color: $link-dark-down;
+  }
+
+  &--active {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $green;
+
+    &:hover {
+      cursor: default;
+      color: $black;
+    }
   }
 }

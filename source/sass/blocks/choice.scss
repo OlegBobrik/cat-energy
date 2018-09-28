@@ -1,15 +1,21 @@
 .choice {
   font-family: $oswald;
   color: $black;
+  text-transform: uppercase;
 }
 
 .choice__title {
   font-size: $biggest;
   line-height: 60px;
   font-weight: inherit;
+  text-transform: none;
 }
 
 .choice__slogan {
   font-size: $medium;
-  text-transform: uppercase;
+}
+
+.choice__button {
+  color: $black;
+  text-decoration: none;
 }

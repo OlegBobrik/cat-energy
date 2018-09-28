@@ -1,18 +1,9 @@
 html,
 body {
-  max-width: 1220px;
-  margin: 0 auto;
   font-family: $arial;
   font-size: $small;
   line-height: 24px;
   font-weight: 400;
   color: $darkgrey;
   background-color: $white;
-}
-
-a {
-  font-family: $oswald;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $black;
 }

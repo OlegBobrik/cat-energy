@@ -5,8 +5,10 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
+    "gulp-wait": "0.0.2",
     "stylelint": "^9.5.0",
     "stylelint-config-recommended": "^2.1.0"
   },
