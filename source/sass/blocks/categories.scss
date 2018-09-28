@@ -1,0 +1,19 @@
+.categories__title {
+  font-family: $oswald;
+  font-size: $big;
+  font-weight: inherit;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.categories__description {
+  line-height: 24px;
+}
+
+.categories__link {
+  font-family: $oswald;
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
