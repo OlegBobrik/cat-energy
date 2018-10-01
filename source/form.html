@@ -2,38 +2,39 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Подбор программы</title>
 </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo.svg" width="226" height="30" alt="Cat Energy logo">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="list-img/logo.svg" width="202" height="59" alt="Cat Enelist-rgy logo">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item--active">Подбор программы</a>
+            <a class="site-list__link site-list__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="page-main">
-      <section class="choice">
-        <h2 class="visually-hidden">Подбор программы</h2>
-        <p class="choice__description">
+      <section class="select">
+        <h2 class="select__title">Подбор программы</h2>
+        <p class="select__description">
           Заполните анкету и мы подберем программу питания для вашего кота
         </p>
-        <form class="choice__form form-choice" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form-choice__characters characters">
+        <form class="select__form form-select" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="form-select__fieldset characters">
             <legend class="visually-hidden">Данные животного</legend>
             <div>
               <label class="characters__label">Имя:<sup>*</sup>
@@ -51,7 +52,7 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="form-choice__program program">
+          <fieldset class="form-select__fieldset program">
             <legend class="visually-hidden">Выбор программы</legend>
             <div>
               <label class="program__label">
@@ -69,7 +70,7 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="form-choice__contacts contacts">
+          <fieldset class="form-select__fieldset contacts">
             <legend class="contacts__title">Контактные данные (кладелец кота)</legend>
             <div>
               <label class="contacts__label">E-mail:<sup>*</sup>
@@ -82,11 +83,11 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="form-choice__comments comments">
+          <fieldset class="form-select__fieldset comments">
             <legend class="comments__title">Комментарий</legend>
             <textarea class="comments__textarea" name="comments" cols="30" rows="10"></textarea>
           </fieldset>
-          <fieldset class="form-choice__additional additional">
+          <fieldset class="form-select__fieldset additional">
             <legend class="additional__title">Дополнительно</legend>
             <div>
               <label class="additional__label">
@@ -109,8 +110,8 @@
               </label>
             </div>
           </fieldset>
-          <input class="form-choice__button" type="submit" value="Отправить заявку">
-          <span class="form-choice__note"><sup>*</sup>­­ ­− Обязательные поля</span>
+          <input class="form-select__button" type="submit" value="Отправить заявку">
+          <span class="form-select__note"><sup>*</sup>­­ ­− Обязательные поля</span>
         </form>
       </section>
 
