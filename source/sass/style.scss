@@ -6,16 +6,16 @@
 @import "global/base";
 
 // index styles
-@import "blocks/page-header";
-@import "blocks/main-nav";
-@import "blocks/site-list";
-@import "blocks/choice";
-@import "blocks/food";
-@import "blocks/categories";
-@import "blocks/advantages";
-@import "blocks/example.scss";
-@import "blocks/address.scss";
-@import "blocks/social.scss";
+@import "blocks/index/page-header";
+@import "blocks/index/main-nav.scss";
+@import "blocks/index/site-list";
+@import "blocks/index/choice";
+@import "blocks/index/food";
+@import "blocks/index/categories";
+@import "blocks/index/advantages";
+@import "blocks/index/example.scss";
+@import "blocks/index/address.scss";
+@import "blocks/index/social.scss";
 
 // catalog styles
 @import "blocks/catalog/catalog.scss";
@@ -25,3 +25,6 @@
 // from styles
 @import "blocks/form/select.scss";
 @import "blocks/form/form-select.scss";
+@import "blocks/form/contacts.scss";
+@import "blocks/form/comments.scss";
+@import "blocks/form/additional.scss";

@@ -3,10 +3,12 @@
   font-size: 20px;
   line-height: 20px;
   color: $black;
+  text-transform: uppercase;
 }
 
 .select__title {
   font-size: $biggest;
   line-height: 60px;
   font-weight: 400;
+  text-transform: none;
 }

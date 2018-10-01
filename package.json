@@ -28,13 +28,11 @@
     "type": "git",
     "url": "git+https://github.com/OlegBobrik/cat-energy.git"
   },
-  "author": {
-    "name": "Oleg V. Bobrik",
-    "email": "olegvbobrik@gmail.com"
-  },
+  "author": "Oleg V. Bobrik <olegvbobrik@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/OlegBobrik/cat-energy/issues"
   },
-  "homepage": "https://github.com/OlegBobrik/cat-energy#readme"
+  "homepage": "https://github.com/OlegBobrik/cat-energy#readme",
+  "keywords": []
 }
