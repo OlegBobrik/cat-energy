@@ -1,0 +1,30 @@
+.extras__title {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $black;
+}
+
+.extras__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.extras__name {
+  display: inline-block;
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.extras__value {
+  display: inline-block;
+}
+
+.extras__order {
+  padding: 10px 120px;
+}

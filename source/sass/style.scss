@@ -1,7 +1,11 @@
+// global styles
 @import "global/fonts";
 @import "global/variables";
 @import "global/visually-hidden.scss";
+@import "global/button.scss";
 @import "global/base";
+
+// index styles
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/site-list";
@@ -9,3 +13,15 @@
 @import "blocks/food";
 @import "blocks/categories";
 @import "blocks/advantages";
+@import "blocks/example.scss";
+@import "blocks/address.scss";
+@import "blocks/social.scss";
+
+// catalog styles
+@import "blocks/catalog/catalog.scss";
+@import "blocks/catalog/list-catalog.scss";
+@import "blocks/catalog/extras.scss";
+
+// from styles
+@import "blocks/form/select.scss";
+@import "blocks/form/form-select.scss";

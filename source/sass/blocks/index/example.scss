@@ -1,0 +1,30 @@
+.example__title {
+  font-family: $oswald;
+  font-size: $biggest;
+  line-height: 60px;
+  font-weight: 400;
+  color: $black;
+}
+
+.stats__weight,
+.stats__day {
+  font-size: 14px;
+  line-height: 14px;
+  color: $black;
+  text-transform: lowercase;
+}
+
+.stats__kilogram,
+.stats__period {
+  font-family: $oswald;
+  font-size: $medium;
+  line-height: 37px;
+}
+
+.stats__cost {
+  font-family: $oswald;
+  font-size: 20px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+}
