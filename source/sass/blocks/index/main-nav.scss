@@ -1,7 +1,9 @@
 .main-nav {
-  display: inline-block;
-  font-family: $oswald;
+  // Временно
+  display: none;
+  width: 320px;
   font-size: $medium;
+  font-family: $oswald;
 }
 
 .main-nav__list {

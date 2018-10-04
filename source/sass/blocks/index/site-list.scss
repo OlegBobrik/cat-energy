@@ -1,5 +1,5 @@
 .site-list__item {
-  display: inline;
+  // display: inline;
 }
 
 .site-list__link {
@@ -17,13 +17,13 @@
     color: $link-dark-down;
   }
 
-  &--active {
-    padding-bottom: 10px;
-    border-bottom: 2px solid $green;
+  // &--active {
+  //   padding-bottom: 10px;
+  //   border-bottom: 2px solid $green;
 
-    &:hover {
-      cursor: default;
-      color: $black;
-    }
-  }
+  //   &:hover {
+  //     cursor: default;
+  //     color: $black;
+  //   }
+  // }
 }
