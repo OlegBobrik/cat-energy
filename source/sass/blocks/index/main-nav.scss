@@ -1,9 +1,7 @@
 .main-nav {
-  // Временно
-  display: none;
-  width: 320px;
   font-size: $medium;
   font-family: $oswald;
+  min-height: 198px;
 }
 
 .main-nav__list {

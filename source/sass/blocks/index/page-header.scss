@@ -1,13 +1,15 @@
-.page-header {
+.page-header__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.page-header__wrapper {
+.page-header__top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   min-height: 66px;
-  padding: 0 20px;
 }
 
 .page-header__logo {
