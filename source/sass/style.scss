@@ -1,6 +1,7 @@
 // global styles
 @import "global/fonts";
 @import "global/variables";
+@import "global/mixins.scss";
 @import "global/visually-hidden.scss";
 @import "global/button.scss";
 @import "global/base";
@@ -29,6 +30,5 @@
 @import "blocks/form/contacts.scss";
 @import "blocks/form/comments.scss";
 @import "blocks/form/additional.scss";
-
 
 @import "global/outlines.scss";

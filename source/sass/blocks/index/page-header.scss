@@ -1,8 +1,9 @@
 .page-header__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+  // width: 320px;
+  // margin: 0 auto;
+  // padding: 0 20px;
+  // box-sizing: border-box;
+  @include mobile;
 }
 
 .page-header__top {
