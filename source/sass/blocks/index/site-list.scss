@@ -1,5 +1,13 @@
 .site-list__item {
+  margin-top: 23px;
+  margin-bottom: 42px;
   text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.site-list__item:last-of-type {
+  margin-bottom: 0;
 }
 
 .site-list__link {

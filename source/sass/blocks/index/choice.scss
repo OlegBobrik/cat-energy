@@ -1,13 +1,13 @@
 .choice {
   font-family: $oswald;
-  color: $black;
+  color: $white;
   text-transform: uppercase;
-  background-color: $green;
+  // background-color: $green;
 }
 
 .choice__title {
-  font-size: $biggest;
-  line-height: 60px;
+  font-size: $big;
+  line-height: 36px;
   font-weight: inherit;
   text-transform: none;
 }
