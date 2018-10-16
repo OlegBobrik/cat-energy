@@ -1,22 +1,50 @@
 .choice {
+  position: relative;
+
+  padding-top: 32px;
+
   font-family: $oswald;
-  color: $white;
   text-transform: uppercase;
-  // background-color: $green;
+  color: $white;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 167px;
+
+    width: 280px;
+    height: 271px;
+
+    background-image: url("../../../img/index-can-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 280px 271px;
+  }
 }
 
 .choice__title {
+  display: block;
+  margin-bottom: 22px;
+
   font-size: $big;
   line-height: 36px;
   font-weight: inherit;
   text-transform: none;
+  text-align: center;
 }
 
 .choice__slogan {
-  font-size: $medium;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
 }
 
 .choice__button {
-  font-size: 20px;
-  padding: 12px 40px 10px;
+  display: block;
+  margin-top: 300px;
+  padding: 14px 10px 8px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
 }

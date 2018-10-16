@@ -1,0 +1,21 @@
+.page-main__wrapper {
+  position: relative;
+  @include mobile;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 320px;
+    height: 305px;
+
+    background-image: url("../../../img/index-background-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #63a73a;
+  }
+}
