@@ -1,25 +1,73 @@
 .categories {
+  position: relative;
   display: inline-block;
+  margin-bottom: 42px;
+  padding-top: 28px;
   background-color: $lightgrey;
 }
 
 .categories__title {
+  display: block;
+
   font-family: $oswald;
-  font-size: $big;
+  font-size: 24px;
   font-weight: inherit;
-  line-height: 60px;
+  line-height: 37px;
   text-transform: uppercase;
+  text-align: center;
   color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    display: inline-block;
+
+    background-image: url('../../../img/sprite.png');
+    background-repeat: no-repeat;
+  }
+}
+
+.categories__title--slim {
+  margin-left: 12px;
+
+  &::before  {
+    top: 16px;
+    left: 2px;
+
+    width: 50px;
+    height: 53px;
+
+    background-position: -10px -10px;
+  }
+}
+
+.categories__title--fat {
+  margin-left: 40px;
+
+  &::before  {
+    top: 18px;
+    left: -7px;
+
+    width: 67px;
+    height: 50px;
+
+    background-position: -80px -10px;
+  }
 }
 
 .categories__description {
-  line-height: 24px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .categories__link {
   font-family: $oswald;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: $small;
+  line-height: 16px;
   color: $black;
   text-decoration: none;
   text-transform: uppercase;
