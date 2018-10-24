@@ -1,18 +1,62 @@
 .advantages__title {
+  display: block;
+  margin-bottom: 23px;
+
   font-family: $oswald;
-  font-size: $biggest;
+  font-size: $big;
   line-height: 60px;
   font-weight: 400;
   color: $black;
 }
 
 .advantages__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .advantages__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../../../img/sprite.png");
+    background-repeat: no-repeat;
+  }
+
+  &--usefully::before {
+    background-position: -167px -10px;
+  }
+
+  &--powder::before {
+    background-position: -247px -10px;
+  }
+
+  &--change::before {
+    background-position: -327px -10px;
+  }
+
+  &--time::before {
+    background-position: -407px -10px;
+  }
+}
+
+.advantages__description {
   display: inline-block;
-  width: 245px;
+  width: 200px;
+  margin: 0;
+  margin-left: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
 }
