@@ -2,14 +2,12 @@
   position: relative;
 
   display: inline-block;
-  margin-bottom: 42px;
-  padding-top: 28px;
+  margin-bottom: 19px;
+  padding-top: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   background-color: $lightgrey;
-
-  &:last-of-type {
-    margin-bottom: 38px;
-  }
 }
 
 .categories__title {
@@ -39,8 +37,8 @@
   margin-left: 12px;
 
   &::before  {
-    top: 16px;
-    left: 2px;
+    top: 22px;
+    left: 22px;
 
     width: 50px;
     height: 53px;
@@ -53,8 +51,8 @@
   margin-left: 40px;
 
   &::before  {
-    top: 18px;
-    left: -7px;
+    top: 24px;
+    left: 13px;
 
     width: 67px;
     height: 50px;
@@ -64,8 +62,8 @@
 }
 
 .categories__description {
-  margin-top: 25px;
-  margin-bottom: 18px;
+  margin-top: 26px;
+  margin-bottom: 21px;
   padding-bottom: 21px;
 
   font-size: 14px;
@@ -75,6 +73,9 @@
 }
 
 .categories__link {
+  display: block;
+  padding-bottom: 21px;
+
   font-family: $oswald;
   font-size: $small;
   line-height: 16px;

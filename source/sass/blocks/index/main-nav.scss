@@ -1,11 +1,13 @@
 .main-nav {
+  @include mobile-with-paddings;
+
   font-size: $medium;
   font-family: $oswald;
-  min-height: 175px;
 }
 
 .main-nav__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }

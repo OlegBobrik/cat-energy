@@ -1,3 +1,7 @@
+.address__wrapper {
+  @include mobile-with-paddings;
+}
+
 .address__coop {
   font-family: $oswald;
   font-size: 20px;

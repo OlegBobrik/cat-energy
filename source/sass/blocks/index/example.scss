@@ -1,11 +1,23 @@
+.example__wrapper {
+  @include mobile-with-paddings;
+  background-color: $lightgrey;
+}
+
 .example__title {
+  display: block;
+  padding-top: 34px;
+
   font-family: $oswald;
-  font-size: $biggest;
-  line-height: 60px;
+  font-size: $big;
+  line-height: 36px;
   font-weight: 400;
   color: $black;
 }
 
-.example__containter {
-  background-color: $lightgrey;
+.example__text {
+  width: 270px;
+  margin: 31px 0;
+
+  font-size: 14px;
+  line-height: 18px;
 }

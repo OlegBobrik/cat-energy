@@ -1,16 +1,12 @@
 .page-header__wrapper {
-  // width: 320px;
-  // margin: 0 auto;
-  // padding: 0 20px;
-  // box-sizing: border-box;
-  @include mobile;
+  @include mobile-with-paddings;
 }
 
 .page-header__top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 66px;
+  min-height: 65px;
 }
 
 .page-header__logo {

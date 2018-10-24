@@ -1,3 +1,12 @@
+.advantages {
+  margin-bottom: 42px;
+  padding-top: 2px;
+}
+
+.advantages__wrapper {
+  @include mobile-with-paddings;
+}
+
 .advantages__title {
   display: block;
   margin-bottom: 23px;

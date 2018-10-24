@@ -1,13 +1,12 @@
 .site-list__item {
-  margin-top: 23px;
-  margin-bottom: 42px;
+  padding-top: 23px;
+  padding-bottom: 18px;
+
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.03em;
-}
 
-.site-list__item:last-of-type {
-  margin-bottom: 0;
+  border-top: 1px solid #e6e6e6;
 }
 
 .site-list__link {
@@ -24,14 +23,4 @@
   &:active {
     color: $link-dark-down;
   }
-
-  // &--active {
-  //   padding-bottom: 10px;
-  //   border-bottom: 2px solid $green;
-
-  //   &:hover {
-  //     cursor: default;
-  //     color: $black;
-  //   }
-  // }
 }

@@ -1,18 +1,55 @@
 .choice {
   position: relative;
 
-  margin-bottom: 28px;
-  padding-top: 32px;
+  margin-bottom: 22px;
+  padding-top: 33px;
 
   font-family: $oswald;
   text-transform: uppercase;
   color: $white;
+}
+
+.choice__wrapper {
+  @include mobile-with-paddings;
+}
+
+.choice__title {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  margin-bottom: 22px;
+
+  font-size: $big;
+  line-height: 36px;
+  font-weight: inherit;
+  text-transform: none;
+  text-align: center;
 
   &::before {
     content: "";
 
     position: absolute;
-    top: 167px;
+    top: -32px;
+    left: -20px;
+    z-index: -1;
+
+    display: block;
+    width: 320px;
+    height: 305px;
+
+    background-image: url("../../../img/index-background-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #63a73a;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 134px;
+    left: 0;
 
     width: 280px;
     height: 271px;
@@ -23,18 +60,10 @@
   }
 }
 
-.choice__title {
-  display: block;
-  margin-bottom: 22px;
-
-  font-size: $big;
-  line-height: 36px;
-  font-weight: inherit;
-  text-transform: none;
-  text-align: center;
-}
-
 .choice__slogan {
+  position: relative;
+  z-index: 1;
+
   font-size: 14px;
   line-height: 14px;
   text-align: center;
