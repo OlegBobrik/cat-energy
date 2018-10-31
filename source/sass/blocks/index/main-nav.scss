@@ -1,5 +1,5 @@
 .main-nav {
-  @include mobile-with-paddings;
+  @include mobile;
 
   font-size: $medium;
   font-family: $oswald;

@@ -1,22 +1,63 @@
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .stats__weight,
 .stats__day {
-  font-size: 14px;
-  line-height: 14px;
+  position: relative;
+
+  width: 122px;
+  height: 53px;
+  margin: 0;
+  margin-bottom: 36px;
+
+  font-size: 12px;
+  line-height: 12px;
   color: $black;
   text-transform: lowercase;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.stats__decline,
+.stats__time {
+  position: absolute;
+  top: 46px;
+  left: 20px;
+
+  width: 80px;
+  height: 30px;
+
+  text-align: center;
+
+  background-color: #f2f2f2;
 }
 
 .stats__kilogram,
 .stats__period {
+  display: block;
+
+  padding-top: 16px;
+  box-sizing: border-box;
+
   font-family: $oswald;
-  font-size: $medium;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .stats__cost {
+  width: 100%;
+  margin: 0;
+
   font-family: $oswald;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 20px;
   color: $black;
+  text-align: center;
   text-transform: uppercase;
 }

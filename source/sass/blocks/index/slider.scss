@@ -1,11 +1,31 @@
 .slider__scale {
+  position: relative;
+
   display: inline-block;
   width: 84px;
   height: 14px;
   box-sizing: border-box;
 
   border: 1px solid #cdcdcd;
-  border-radius: 5px;
+  border-radius: 6px;
 
   cursor: pointer;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: 3px;
+    left: 6px;
+
+    display: block;
+    width: 35px;
+    height: 6px;
+
+    background-color: #68b738;
+    border-radius: 3px;
+
+    transition-duration: 300ms;
+  }
 }

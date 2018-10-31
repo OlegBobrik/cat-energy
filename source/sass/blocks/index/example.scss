@@ -6,6 +6,7 @@
 .example__title {
   display: block;
   padding-top: 34px;
+  margin-bottom: 30px;
 
   font-family: $oswald;
   font-size: $big;
@@ -16,7 +17,8 @@
 
 .example__text {
   width: 270px;
-  margin: 31px 0;
+  margin: 0;
+  margin-bottom: 26px;
 
   font-size: 14px;
   line-height: 18px;

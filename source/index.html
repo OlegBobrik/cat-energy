@@ -109,9 +109,25 @@
                 При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
               </p>
               <div class="example__result stats">
-                <p class="stats__weight">Снижение веса <span class="stats__kilogram">5 кг</span></p>
-                <p class="stats__day">Затрачено времени <span class="stats__period">60 дней</span></p>
-                <p class="stats__cost">Затраты на питание: <span>15 000 руб.</span></p>
+                <p class="stats__weight">
+                  <span class="stats__decline">Снижение веса </span>
+                  <span class="stats__kilogram">5 кг</span></p>
+                <p class="stats__day">
+                  <span class="stats__time">Затрачено времени </span>
+                  <span class="stats__period">60 дней</span></p>
+                <p class="stats__cost">
+                  <span class="stats__food">Затраты на питание: </span>
+                  <span>15 000 руб.</span>
+                </p>
+              </div>
+              <div class="example__slider slider">
+                <label class="slider__before">Было
+                  <input class="slider__radio slider__radio--after" type="radio" name="radioSlider" checked>
+                </label>
+                <label class="slider__after">Стало
+                  <input class="slider__radio slider__radio--before" type="radio" name="radioSlider">
+                </label>
+                <div class="slider__scale"></div>
               </div>
             </div>
         </section>
@@ -125,7 +141,7 @@
             Санкт-Петербург
           </address>
           <div class="address__map">
-            <!-- here will map -->
+            <!-- map -->
           </div>
         </div>
       </section>
@@ -155,6 +171,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/script.js"></script>
   </body>
 </html>

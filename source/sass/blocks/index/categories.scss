@@ -22,13 +22,13 @@
   color: $black;
 
   &::before {
-    content: "";
+    content: "44";
 
     position: absolute;
 
     display: inline-block;
 
-    background-image: url('../../../img/sprite.png');
+    background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
   }
 }
