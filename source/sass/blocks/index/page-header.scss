@@ -43,9 +43,13 @@
   padding: 0;
 
   background-image: url("../img/mobile-menu.png");
-  background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
 
   cursor: pointer;
+}
+
+.page-header__button-menu--close {
+  background-image: url("../img/m-close.png");
 }

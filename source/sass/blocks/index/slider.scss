@@ -1,9 +1,31 @@
+.slider {
+  text-align: center;
+}
+
+.slider__photo {
+  position: relative;
+  left: -20px;
+
+  width: 320px;
+  height: 240px;
+  margin-bottom: 24px;
+
+  background-image: url("../img/cat-before-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__photo--after {
+  background-image: url("../img/cat-after-mobile.png");
+}
+
 .slider__scale {
   position: relative;
 
   display: inline-block;
   width: 84px;
   height: 14px;
+  margin: 0 13px;
   box-sizing: border-box;
 
   border: 1px solid #cdcdcd;
@@ -26,6 +48,24 @@
     background-color: #68b738;
     border-radius: 3px;
 
-    transition-duration: 300ms;
+    transition-duration: 200ms;
+  }
+}
+
+.slider__before,
+.slider__after {
+  font-family: $oswald;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.slider__radio {
+  display: none;
+}
+
+.slider__scale--right {
+  &::after {
+    left: 42px;
   }
 }

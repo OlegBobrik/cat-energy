@@ -1,6 +1,7 @@
 .example__wrapper {
   @include mobile-with-paddings;
   background-color: $lightgrey;
+  padding-bottom: 32px;
 }
 
 .example__title {
