@@ -1,7 +1,11 @@
+.example {
+  margin-bottom: 28px;
+}
+
 .example__wrapper {
   @include mobile-with-paddings;
-  background-color: $lightgrey;
   padding-bottom: 32px;
+  background-color: $lightgrey;
 }
 
 .example__title {

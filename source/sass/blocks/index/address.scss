@@ -1,16 +1,35 @@
+.address {
+  margin-bottom: 26px;
+}
+
 .address__wrapper {
+  display: flex;
+  justify-content: space-between;
   @include mobile-with-paddings;
+  margin-bottom: 24px;
 }
 
 .address__coop {
+  width: 50%;
+
+  padding-top: 2px;
+
   font-family: $oswald;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   color: $black;
   text-transform: uppercase;
 }
 
 .address__location {
+  width: 50%;
+  font-size: 14px;
+  line-height: 20px;
   font-style: normal;
+}
+
+.address__map {
+  @include mobile;
+  height: 362px;
 }

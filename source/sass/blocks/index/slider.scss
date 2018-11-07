@@ -12,11 +12,12 @@
 
   background-image: url("../img/cat-before-mobile.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .slider__photo--after {
   background-image: url("../img/cat-after-mobile.png");
+  background-position: center;
 }
 
 .slider__scale {
@@ -66,6 +67,6 @@
 
 .slider__scale--right {
   &::after {
-    left: 42px;
+    left: 41px;
   }
 }
