@@ -13,7 +13,6 @@ buttonMenu.addEventListener("click", function () {
   buttonMenu.classList.toggle("page-header__button-menu--close");
 })
 
-
 function check(radio) {
   radio.checked = true;
 }
@@ -45,3 +44,29 @@ scale.addEventListener("click", function() {
     uncheck(before);
   }
 });
+
+ymaps.ready(init);
+
+function init() {
+    // Создание карты.
+    var myMap = new ymaps.Map("address__map", {
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [59.938631, 30.323055],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 17,
+        controls: ['geolocationControl', 'zoomControl', 'fullscreenControl']
+    });
+
+    var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
+      iconLayout: 'default#image',
+      iconImageHref: '/img/map-pin.png',
+      iconImageSize: [55, 53],
+      iconImageOffset: [-17, -80]
+  });
+
+  myMap.geoObjects.add(myPlacemark);
+}
