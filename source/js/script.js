@@ -9,7 +9,7 @@ var before = document.querySelector(".slider__radio--before");
 var scale = document.querySelector(".slider__scale");
 
 buttonMenu.addEventListener("click", function () {
-  menu.classList.toggle("main-nav--hiddden");
+  menu.classList.toggle("main-nav--close");
   buttonMenu.classList.toggle("page-header__button-menu--close");
 })
 

@@ -5,7 +5,7 @@
 .address__wrapper {
   display: flex;
   justify-content: space-between;
-  @include mobile-with-paddings;
+  @include mobile-padding;
   margin-bottom: 24px;
 }
 
@@ -30,6 +30,5 @@
 }
 
 .address__map {
-  @include mobile;
   height: 362px;
 }

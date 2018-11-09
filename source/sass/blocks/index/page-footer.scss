@@ -1,3 +1,16 @@
 .page-footer__wrapper {
-  @include mobile-with-paddings;
+  @include mobile-padding;
+}
+
+.social__link {
+  width: 35px;
+  height: 35px;
+}
+
+.social__link--vk::after {
+  content: "dfgdfg";
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../../img/svg/icon-vk.svg");
 }

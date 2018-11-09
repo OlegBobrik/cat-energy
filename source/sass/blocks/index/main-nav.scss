@@ -1,11 +1,9 @@
 .main-nav {
-  @include mobile;
-
   font-size: $medium;
   font-family: $oswald;
 }
 
-.main-nav--hiddden {
+.main-nav--close {
   display: none;
 }
 

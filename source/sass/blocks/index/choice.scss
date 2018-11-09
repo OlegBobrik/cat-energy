@@ -10,7 +10,7 @@
 }
 
 .choice__wrapper {
-  @include mobile-with-paddings;
+  @include mobile-padding;
 }
 
 .choice__title {

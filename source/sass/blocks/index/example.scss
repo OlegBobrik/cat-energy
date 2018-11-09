@@ -3,7 +3,7 @@
 }
 
 .example__wrapper {
-  @include mobile-with-paddings;
+  @include mobile-padding;
   padding-bottom: 32px;
   background-color: $lightgrey;
 }
