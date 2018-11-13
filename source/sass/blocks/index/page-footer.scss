@@ -1,16 +1,35 @@
+.page-footer {
+  padding-top: 39px;
+  background-color: #f2f2f2;
+}
+
 .page-footer__wrapper {
   @include mobile-padding;
+  text-align: center;
 }
 
-.social__link {
-  width: 35px;
-  height: 35px;
+.page-footer__logo {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+
+  border-bottom: 1px solid #d9d9d9;
 }
 
-.social__link--vk::after {
-  content: "dfgdfg";
-  display: block;
-  width: 35px;
-  height: 35px;
-  background-image: url("../../../img/svg/icon-vk.svg");
+.page-footer__logo-image {
+  width: 128px;
+  height: 24px;
+  margin-bottom: 24px;
+}
+
+.page-footer__social {
+  margin-bottom: 22px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
 }

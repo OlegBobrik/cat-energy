@@ -5,15 +5,14 @@
 
 .slider__photo {
   position: relative;
-  left: -20px;
 
-  width: 320px;
+  width: 100%;
   height: 240px;
   margin-bottom: 24px;
 
   background-image: url("../img/cat-before-mobile.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: -20px 0;
 }
 
 .slider__photo--after {
@@ -53,7 +52,9 @@
     transition-duration: 200ms;
   }
 }
-
+.slider__before {
+  margin-left: 4px;
+}
 .slider__before,
 .slider__after {
   font-family: $oswald;
@@ -68,6 +69,6 @@
 
 .slider__scale--right {
   &::after {
-    left: 41px;
+    left: 40px;
   }
 }

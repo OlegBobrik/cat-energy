@@ -1,9 +1,31 @@
 .social__list {
-  list-style: none;
-  margin: 0;
+  display: flex;
+  width: 128px;
+  justify-content: space-between;
+
+  margin: auto;
   padding: 0;
 }
 
 .social__item {
   display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+
+.social__link--vk {
+  width: 22px;
+  height: 16px;
+
+  margin-left: -6px;
+}
+
+.social__link--in {
+  width: 16px;
+  height: 16px;
+}
+
+.social__link--fb {
+  width: 10px;
+  height: 19px;
 }

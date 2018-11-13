@@ -82,4 +82,15 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $black;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 11px;
+    margin-left: 12px;
+    padding-bottom: 1px;
+    background-image: url("../../../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+  }
 }
