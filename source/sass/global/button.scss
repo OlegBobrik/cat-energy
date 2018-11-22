@@ -2,10 +2,20 @@
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
-  border: none;
-  color: $white;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: $green;
+  color: $white;
+
+  border: none;
+  background-color: $green-btn;
+
   cursor: pointer;
+
+  &:hover {
+    background-color: $green-btn-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
