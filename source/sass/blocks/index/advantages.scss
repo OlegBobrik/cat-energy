@@ -39,6 +39,7 @@
     display: inline-block;
     width: 60px;
     height: 60px;
+    z-index: 1;
 
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
@@ -66,7 +67,72 @@
   width: 200px;
   margin: 0;
   margin-left: 20px;
+  z-index: 1;
 
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    margin-bottom: 63px;
+
+    font-size: $biggest;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    display: flex;
+    width: 100%;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    position: relative;
+
+    width: 50%;
+    margin-bottom: 202px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    &::after {
+      position: absolute;
+      top: 132px;
+
+      display: block;
+      width: 121px;
+      height: 228px;
+
+      font-size: 281px;
+      font-family: $oswald;
+      color: #f2f2f2;
+    }
+  }
+
+  .advantages__item--usefully::after {
+    content: "1";
+    left: 118px;
+  }
+
+  .advantages__item--powder::after {
+    content: "2";
+    left: 141px;
+  }
+
+  .advantages__item--change::after {
+    content: "3";
+    left: 113px;
+  }
+
+  .advantages__item--time::after {
+    content: "4";
+    left: 143px;
+  }
+
+  .advantages__description {
+    margin-left: 0px;
+  }
 }
