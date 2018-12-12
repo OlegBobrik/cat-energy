@@ -7,7 +7,9 @@ var browserSync = require('browser-sync').create();
 gulp.task('sass', function () {
   return gulp.src('source/sass/style.scss')
     .pipe(wait(200))
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+      includePaths: require('node-normalize-scss').includePaths
+    }).on('error', sass.logError))
     .pipe(gulp.dest('source/css'))
     .pipe(browserSync.stream());
 });

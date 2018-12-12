@@ -9,6 +9,7 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
     "gulp-wait": "0.0.2",
+    "node-normalize-scss": "^8.0.0",
     "stylelint": "^9.6.0",
     "stylelint-config-recommended": "^2.1.0"
   },
