@@ -1,3 +1,10 @@
-.page-main {
-  // margin-bottom: 39px;
+.page-main__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    width: 768px;
+  }
 }

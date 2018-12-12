@@ -23,3 +23,19 @@
     color: $link-dark-down;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    border-top: none;
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .site-list__link--active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #68b738;
+  }
+}

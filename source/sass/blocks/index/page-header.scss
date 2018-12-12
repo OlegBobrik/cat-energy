@@ -1,5 +1,7 @@
 .page-header__wrapper {
-  @include mobile-padding;
+  width: 320px;
+  margin: 0 auto;
+  @include padding;
 }
 
 .page-header__top {
@@ -52,4 +54,42 @@
 
 .page-header__button-menu--close {
   background-image: url("../img/svg/m-close.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 62px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    width: 768px;
+    justify-content: space-between;
+    padding-top: 21px;
+  }
+
+
+  .page-header__logo-image,
+  .page-header__name,
+  .page-header__button-menu {
+    display: none;
+  }
+
+  .page-header__logo {
+
+    &::before {
+      content: "";
+      position: relative;
+      right: 6px;
+      top: -1px;
+
+      display: block;
+      width: 173px;
+      height: 58px;
+
+      background-image: url("../img/tablet/svg/logo-tablet.svg");
+      background-repeat: no-repeat;
+      background-size: 173px 58px;
+    }
+  }
 }

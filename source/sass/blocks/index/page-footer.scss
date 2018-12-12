@@ -1,11 +1,13 @@
 .page-footer {
   padding-top: 39px;
+  text-align: center;
   background-color: #f2f2f2;
 }
 
 .page-footer__wrapper {
-  @include mobile-padding;
-  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+  @include padding;
 }
 
 .page-footer__logo {

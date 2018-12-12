@@ -13,3 +13,15 @@
 
   list-style: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav--close {
+    display: block;
+  }
+
+  .main-nav__list {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+  }
+}
