@@ -43,22 +43,23 @@
 
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
+    background-color: #68b738;
   }
 
   &--usefully::before {
-    background-position: -167px -10px;
+    background-position: -96px -14px;
   }
 
   &--powder::before {
-    background-position: -247px -10px;
+    background-position: -270px -17px;
   }
 
   &--change::before {
-    background-position: -327px -10px;
+    background-position: -12px -15px;
   }
 
   &--time::before {
-    background-position: -407px -10px;
+    background-position: -182px -15px;
   }
 }
 
@@ -74,6 +75,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    margin-bottom: 18px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   .advantages__title {
     margin-bottom: 63px;
 
@@ -92,11 +98,37 @@
   .advantages__item {
     position: relative;
 
-    width: 50%;
-    margin-bottom: 202px;
+    width: 324px;
+    margin-bottom: 133px;
 
     flex-direction: column;
     align-items: flex-start;
+
+    &--change,
+    &--time {
+      margin-bottom: 102px;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--usefully::before {
+      background-position: -86px -4px;
+    }
+
+    &--powder::before {
+      background-position: -260px -6px;
+    }
+
+    &--change::before {
+      background-position: -1px -5px;
+    }
+
+    &--time::before {
+      background-position: -172px -5px;
+    }
 
     &::after {
       position: absolute;
@@ -119,7 +151,7 @@
 
   .advantages__item--powder::after {
     content: "2";
-    left: 141px;
+    left: 111px;
   }
 
   .advantages__item--change::after {
@@ -129,10 +161,15 @@
 
   .advantages__item--time::after {
     content: "4";
-    left: 143px;
+    left: 112px;
   }
 
   .advantages__description {
+    width: 265px;
+    margin-top: 32px;
     margin-left: 0px;
+
+    font-size: $small;
+    line-height: 24px;
   }
 }

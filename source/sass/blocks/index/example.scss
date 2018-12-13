@@ -1,8 +1,10 @@
 .example {
-  margin-bottom: 28px;
-  background-color: $lightgrey;
   @include padding;
+
+  margin-bottom: 28px;
   padding-bottom: 32px;
+
+  background-color: $lightgrey;
 }
 
 .example__title {
@@ -24,4 +26,25 @@
 
   font-size: 14px;
   line-height: 18px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+
+  .example__title {
+    margin-bottom: 55px;
+
+    font-size: $biggest;
+    line-height: 60px;
+  }
+
+  .example__text {
+    width: 100%;
+
+    font-size: $small;
+    line-height: 24px;
+  }
 }
