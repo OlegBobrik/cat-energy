@@ -72,3 +72,28 @@
     left: 40px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .slider {
+    min-height: 462px;
+    background-color: #f2f2f2;
+  }
+
+  .slider__photo {
+
+    background-image: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -157px;
+      left: 0;
+
+      width: inherit;
+      height: 499px;
+
+      background-image: url("../img/tablet/cat-before.png");
+      background-position: 16px 6px;
+    }
+  }
+}

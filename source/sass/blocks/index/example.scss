@@ -28,7 +28,6 @@
   line-height: 18px;
 }
 
-
 @media (min-width: $tablet-width) {
   .example {
     background-color: #ffffff;
@@ -42,7 +41,8 @@
   }
 
   .example__text {
-    width: 100%;
+    width: 700px;
+    margin-bottom: 53px;
 
     font-size: $small;
     line-height: 24px;
