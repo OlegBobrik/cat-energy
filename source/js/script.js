@@ -50,15 +50,15 @@ ymaps.ready(init);
 function init() {
     var myMap = new ymaps.Map("address__map", {
         center: [59.938631, 30.323055],
-        zoom: 17,
+        zoom: 18,
         controls: ['geolocationControl', 'zoomControl', 'fullscreenControl']
     });
 
     var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
       iconLayout: 'default#image',
       iconImageHref: '/img/map-pin.png',
-      iconImageSize: [55, 53],
-      iconImageOffset: [-17, -80]
+      iconImageSize: [113, 106],
+      iconImageOffset: [-40, -135]
   });
 
   myMap.geoObjects.add(myPlacemark);

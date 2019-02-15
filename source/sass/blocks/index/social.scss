@@ -29,3 +29,9 @@
   width: 10px;
   height: 19px;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    min-width: 130px;
+  }
+}

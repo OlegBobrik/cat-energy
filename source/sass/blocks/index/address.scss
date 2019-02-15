@@ -28,3 +28,35 @@
 .address__map {
   height: 362px;
 }
+
+@media (min-width: $tablet-width) {
+  .address__container {
+    margin-bottom: 58px;
+    padding: 0 72px;
+  }
+
+  .address__coop {
+    width: 175px;
+
+    padding-top: 5px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .address__location {
+    width: 175px;
+
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .address__location span {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  .address__map {
+    height: 396px;
+  }
+}

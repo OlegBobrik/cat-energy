@@ -30,10 +30,13 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    margin-bottom: 63px;
+    padding: 0;
     background-color: #ffffff;
   }
 
   .example__title {
+    @include padding;
     margin-bottom: 55px;
 
     font-size: $biggest;
@@ -41,10 +44,15 @@
   }
 
   .example__text {
+    @include padding;
     width: 700px;
     margin-bottom: 53px;
 
     font-size: $small;
     line-height: 24px;
+  }
+
+  .example__result {
+    @include padding;
   }
 }

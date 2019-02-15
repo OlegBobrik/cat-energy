@@ -77,23 +77,75 @@
   .slider {
     min-height: 462px;
     background-color: #f2f2f2;
+    background: linear-gradient(90deg,#f2f2f2 50%, #eaeaea 50%);
   }
 
   .slider__photo {
-
+    margin-bottom: 129px;
     background-image: none;
 
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       top: -157px;
       left: 0;
 
-      width: inherit;
+      width: 50%;
       height: 499px;
 
       background-image: url("../img/tablet/cat-before.png");
-      background-position: 16px 6px;
+      background-position: 46px 6px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -168px;
+      right: 0;
+
+      width: 50%;
+      height: 512px;
+
+      background-image: url("../img/tablet/cat-after.png");
+      background-position: -247px -1px;
+    }
+  }
+  .slider__before,
+  .slider__after {
+    margin: 0;
+
+    font-family: $oswald;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+  }
+
+  .slider__scale {
+    top: -5px;
+
+    width: 428px;
+    height: 6px;
+    margin: 0 17px;
+
+    border: none;
+    background-color: #dcdcdc;
+
+    &::after {
+      top: -14px;
+      left: 199px;
+
+      width: 32px;
+      height: 32px;
+
+      background-color: #ffffff;
+      background:radial-gradient(ellipse at center,
+                                #68b738 15%,
+                                #ffffff 20%);
+      border-radius: 50%;
+      border: 1px solid #cdcdcd;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     }
   }
 }
