@@ -200,3 +200,47 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .categories {
+    width: 570px;
+  }
+
+  .categories__title {
+    margin-left: 161px;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .categories__title--slim::after {
+    top: 41px;
+    left: 66px;
+
+    width: 70px;
+    height: 97px;
+
+    background-size: 82px;
+  }
+
+  .categories__title--fat::after {
+    top: 69px;
+    left: 34px;
+
+    width: 134px;
+    height: 56px;
+
+    background-size: 151px;
+  }
+
+  .categories__description {
+    width: 470px;
+    margin-top: 68px;
+    margin-bottom: 13px;
+  }
+}

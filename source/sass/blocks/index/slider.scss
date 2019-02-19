@@ -55,6 +55,7 @@
 .slider__before {
   margin-left: 4px;
 }
+
 .slider__before,
 .slider__after {
   font-family: $oswald;
@@ -75,9 +76,11 @@
 
 @media (min-width: $tablet-width) {
   .slider {
+    width: 768px;
     min-height: 462px;
-    background-color: #f2f2f2;
+
     background: linear-gradient(90deg,#f2f2f2 50%, #eaeaea 50%);
+    background-color: #f2f2f2;
   }
 
   .slider__photo {
@@ -95,6 +98,7 @@
 
       background-image: url("../img/tablet/cat-before.png");
       background-position: 46px 6px;
+      background-repeat: no-repeat;
     }
 
     &::after {
@@ -108,16 +112,22 @@
 
       background-image: url("../img/tablet/cat-after.png");
       background-position: -247px -1px;
+      background-repeat: no-repeat;
     }
   }
   .slider__before,
   .slider__after {
+    display: inline-block;
     margin: 0;
+    padding-bottom: 3px;
 
     font-family: $oswald;
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
+
+    border-bottom: 1px solid #bebebe;
+    border-bottom-style: dotted;
 
     cursor: pointer;
   }
@@ -139,10 +149,10 @@
       width: 32px;
       height: 32px;
 
+
+      background: radial-gradient(ellipse at center,#68b738 15%,#ffffff 20%);
       background-color: #ffffff;
-      background:radial-gradient(ellipse at center,
-                                #68b738 15%,
-                                #ffffff 20%);
+
       border-radius: 50%;
       border: 1px solid #cdcdcd;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);

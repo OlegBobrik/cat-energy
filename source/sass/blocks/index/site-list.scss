@@ -39,3 +39,28 @@
     border-bottom: 2px solid #68b738;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    position: relative;
+    z-index: 1;
+  }
+
+  .site-list__link {
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+
+    &:hover {
+      color: $link-light-hover;
+    }
+
+    &:active {
+      color: $link-light-down;
+    }
+  }
+
+  .site-list__link--active {
+    border-bottom-color: #ffffff;
+  }
+}

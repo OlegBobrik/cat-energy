@@ -31,7 +31,39 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social {
+    margin-bottom: 0;
+  }
+
   .social__list {
-    min-width: 130px;
+    padding-left: 35px;
+    padding-top: 5px;
+  }
+
+  .social__item {
+    width: 32px;
+    height: 32px;
+  }
+
+  .social__link--vk {
+    position: relative;
+    left: -4px;
+
+    width: 30px;
+    height: 20px;
+  }
+
+  .social__link--in {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--fb {
+    position: relative;
+    top: -3px;
+    left: -1px;
+
+    width: 14px;
+    height: 28px;
   }
 }

@@ -8,6 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
   min-height: 65px;
 }
 
@@ -63,7 +64,7 @@
 
   .page-header__wrapper {
     display: flex;
-    width: 768px;
+    width: $tablet-width;
     justify-content: space-between;
     padding-top: 21px;
   }
@@ -72,6 +73,10 @@
   .page-header__name,
   .page-header__button-menu {
     display: none;
+  }
+
+  .page-header__top {
+    width: 220px;
   }
 
   .page-header__logo {
@@ -89,6 +94,42 @@
       background-image: url("../img/tablet/svg/logo-tablet.svg");
       background-repeat: no-repeat;
       background-size: 173px 58px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: 1440px;
+    padding-top: 51px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 1px;
+
+      width: 720px;
+      height: 696px;
+
+      background-image: url("../img/desktop/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: 720px 696px;
+    }
+  }
+
+  .page-header__logo {
+
+    &::before {
+      content: "";
+
+      width: 202px;
+      height: 59px;
+
+      background-image: url("../img/desktop/logo-desktop.svg");
+      background-size: 202px 59px;
     }
   }
 }

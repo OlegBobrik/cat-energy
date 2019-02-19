@@ -8,3 +8,9 @@
     width: 768px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main__wrapper {
+    width: 1440px;
+  }
+}

@@ -138,3 +138,39 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .choice {
+    min-height: 500px;
+    margin-bottom: 96px;
+  }
+
+  .choice__title {
+    width: 430px;
+    margin-left: 80px;
+    padding-top: 51px;
+
+    &::after {
+      position: absolute;
+      top: -38px;
+      left: 370px;
+
+      width: 552px;
+      height: 499px;
+
+      background-image: url("../img/desktop/index-can-desktop.png");
+      background-size: 552px 499px;
+    }
+  }
+
+  .choice__slogan {
+    top: 0;
+    margin-left: 80px;
+    width: 430px;
+  }
+
+  .choice__button {
+    top: 276px;
+    left: 190px;
+  }
+}
