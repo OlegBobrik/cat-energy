@@ -31,12 +31,10 @@
 @media (min-width: $tablet-width) {
   .example {
     margin-bottom: 63px;
-    padding: 0;
     background-color: #ffffff;
   }
 
   .example__title {
-    @include padding;
     margin-bottom: 55px;
 
     font-size: $biggest;
@@ -44,15 +42,41 @@
   }
 
   .example__text {
-    @include padding;
     width: 700px;
     margin-bottom: 53px;
 
     font-size: $small;
     line-height: 24px;
   }
+}
 
-  .example__result {
-    @include padding;
+@media (min-width: $desktop-width) {
+  .example {
+    position: relative;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .example__container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 110px;
+    box-sizing: border-box;
+
+    background-color: #f2f2f2;
+  }
+
+  .example__title {
+    margin-bottom: 66px;
+    padding-left: 110px;
+    padding-top: 2px;
+  }
+
+  .example__text {
+    width: 438px;
+    padding-top: 71px;
   }
 }

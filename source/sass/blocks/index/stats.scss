@@ -119,3 +119,33 @@
     padding-bottom: 9px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .stats {
+    position: absolute;
+    bottom: 72px;
+    width: 486px;
+    margin-bottom: 0;
+  }
+
+  .stats__weight,
+  .stats__day {
+    margin-bottom: 63px;
+  }
+
+  .stats__decline,
+  .stats__time {
+    background-color: #f2f2f2;
+  }
+
+  .stats__cost {
+    width: 328px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stats__food {
+    padding: 0;
+  }
+}

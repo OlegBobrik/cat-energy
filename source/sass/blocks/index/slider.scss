@@ -76,6 +76,9 @@
 
 @media (min-width: $tablet-width) {
   .slider {
+    position: relative;
+    right: 30px;
+
     width: 768px;
     min-height: 462px;
 
@@ -157,5 +160,31 @@
       border: 1px solid #cdcdcd;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    right: 0;
+    width: 790px;
+    background: linear-gradient(90deg,#f2f2f2 50%, #eaeaea 0%);
+  }
+
+  .slider__photo::before {
+    top: -172px;
+    left: 30px;
+
+    width: 365px;
+
+    background-position: 0 0;
+  }
+
+  .slider__photo::after {
+    top: -190px;
+    right: 195px;
+
+    width: 200px;
+
+    background-position: -274px 0;
   }
 }

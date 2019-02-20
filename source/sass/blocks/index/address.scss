@@ -60,3 +60,36 @@
     height: 396px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .address {
+    position: relative;
+  }
+
+  .address__container {
+    position: absolute;
+    top: 95px;
+    left: 114px;
+    align-items: center;
+    z-index: 1;
+
+    width: 570px;
+    height: 201px;
+    margin-bottom: 0;
+
+    background-color: #ffffff;
+  }
+
+  .address__coop {
+    padding-top: 9px;
+  }
+
+  .address__location {
+    padding-top: 5px;
+    text-align: left;
+  }
+
+  .address__map {
+    height: 400px;
+  }
+}
