@@ -24,6 +24,12 @@
   }
 }
 
+.site-list__link--active:hover,
+.site-list__link--active:active {
+  color: #000000;
+  cursor: default;
+}
+
 @media (min-width: $tablet-width) {
   .site-list__item {
     border-top: none;
@@ -62,5 +68,10 @@
 
   .site-list__link--active {
     border-bottom-color: #ffffff;
+
+    &:hover,
+    &:active {
+      color: #ffffff;
+    }
   }
 }
