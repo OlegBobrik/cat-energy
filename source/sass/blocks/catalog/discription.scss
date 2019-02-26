@@ -1,0 +1,32 @@
+.discription__name {
+  width: 95px;
+  margin: 0;
+  margin-bottom: 11px;
+  padding-top: 23px;
+
+  font-family: $oswald;
+  font-size: $small;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.discription__name b {
+  font-weight: 400;
+}
+
+.discription__volume,
+.discription__taste,
+.discription__cost {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.discription__cost span {
+  text-transform: uppercase;
+}

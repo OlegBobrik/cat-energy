@@ -45,7 +45,7 @@
   margin-top: 23px;
   padding: 0;
 
-  background-image: url("../img/svg/m-menu.svg");
+  background-image: url("../img/svg/m-close.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -54,7 +54,7 @@
 }
 
 .page-header__button-menu--close {
-  background-image: url("../img/svg/m-close.svg");
+  background-image: url("../img/svg/m-menu.svg");
 }
 
 @media (min-width: $tablet-width) {

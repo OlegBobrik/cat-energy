@@ -1,25 +1,27 @@
-.list-catalog__list {
+.list-catalog {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .list-catalog__item {
-  display: inline-block;
-  width: 245px;
-  text-align: center;
+  min-height: 208px;
+  padding: 0 20px;
+
+  border: 1px solid #ededed;
+  border-bottom: none;
 }
 
-.list-catalog__name,
-.list-catalog__show {
-  font-family: $oswald;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $black;
+.list-catalog__container {
+  position: relative;
+  display: flex;
 }
 
-.button--more {
-  color: inherit;
-  background-color: inherit;
+.list-catalog__image {
+  width: 140px;
+  height: 144px;
+}
+
+.list-catalog__discription {
+  width: 140px;
 }

@@ -1,4 +1,8 @@
 .button {
+  width: 280px;
+  height: 40px;
+  padding-top: 4px;
+
   font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
@@ -6,6 +10,7 @@
   text-transform: uppercase;
   color: $white;
 
+  box-sizing: border-box;
   border: none;
   background-color: $green-btn;
 
@@ -17,5 +22,19 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--more {
+  color: $darkgrey;
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: $button-show-down;
+    background-color: #ebebeb;
   }
 }
