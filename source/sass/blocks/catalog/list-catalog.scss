@@ -5,16 +5,15 @@
 }
 
 .list-catalog__item {
-  min-height: 208px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 280px;
   padding: 0 20px;
 
   border: 1px solid #ededed;
   border-bottom: none;
-}
-
-.list-catalog__container {
-  position: relative;
-  display: flex;
 }
 
 .list-catalog__image {
@@ -24,4 +23,8 @@
 
 .list-catalog__discription {
   width: 140px;
+}
+
+.list-catalog__order {
+  margin-bottom: 24px;
 }

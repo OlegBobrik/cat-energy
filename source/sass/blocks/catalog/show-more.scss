@@ -1,9 +1,10 @@
 .show-more {
   position: relative;
 
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  min-height: 208px;
 
   text-align: center;
 
