@@ -142,18 +142,18 @@
 @media (min-width: $desktop-width) {
   .choice {
     min-height: 500px;
-    margin-bottom: 96px;
+    margin-bottom: 79px;
   }
 
   .choice__title {
     display: inline-block;
     width: 430px;
     margin-left: 80px;
-    padding-top: 51px;
+    padding-top: 34px;
 
     &::after {
       position: absolute;
-      top: -38px;
+      top: -55px;
       left: 370px;
 
       width: 552px;
@@ -171,7 +171,7 @@
   }
 
   .choice__button {
-    top: 276px;
+    top: 259px;
     left: 190px;
   }
 }

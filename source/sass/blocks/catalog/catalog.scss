@@ -18,6 +18,7 @@
 @media (min-width: $tablet-width) {
   .catalog {
     margin-bottom: 72px;
+    @include padding;
   }
 
   .catalog__title {
@@ -26,7 +27,6 @@
 
     margin-bottom: 156px;
     padding: 0;
-    padding-left: 30px;
 
     border-top: none;
   }

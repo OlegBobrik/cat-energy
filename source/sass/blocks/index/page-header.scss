@@ -99,10 +99,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 79px;
+  }
+
   .page-header__wrapper {
     width: 1440px;
     padding-top: 51px;
+  }
 
+  .page-header__wrapper--background {
     position: relative;
 
     &::after {
