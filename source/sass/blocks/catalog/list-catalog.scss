@@ -1,7 +1,8 @@
 .list-catalog {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .list-catalog__item {
@@ -27,4 +28,145 @@
 
 .list-catalog__order {
   margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .list-catalog {
+    display: flex;
+    width: 100%;
+    @include padding;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .list-catalog__image {
+    display: none;
+  }
+
+  .list-catalog__item {
+    position: relative;
+
+    width: 324px;
+    padding: 166px 37px 0 38px;
+    margin-bottom: 140px;
+    box-sizing: border-box;
+
+    background-color: #f2f2f2;
+
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+
+      background-image: url("/img/prod-sprite.png");
+      background-repeat: no-repeat;
+      background-position-y: -5px;
+    }
+  }
+
+  .list-catalog--prod1 {
+
+    &::before {
+      top: -46px;
+      left: 83px;
+
+      width: 161px;
+      height: 172px;
+
+      background-position-x: -5px;
+    }
+  }
+
+  .list-catalog--prod2 {
+
+    &::before {
+      top: -82px;
+      left: 68px;
+
+      width: 195px;
+      height: 208px;
+
+      background-position-x: -176px;
+    }
+  }
+
+  .list-catalog--prod3 {
+
+    &::before {
+      top: -48px;
+      left: 83px;
+
+      width: 163px;
+      height: 174px;
+
+      background-position-x: -381px;
+    }
+  }
+
+  .list-catalog--prod4 {
+
+    &::before {
+      top: -82px;
+      left: 68px;
+
+      width: 194px;
+      height: 208px;
+
+      background-position-x: -554px;
+    }
+  }
+
+  .list-catalog--prod5 {
+
+    &::before {
+      top: -45px;
+      left: 84px;
+
+      width: 161px;
+      height: 171px;
+
+      background-position-x: -758px;
+    }
+  }
+
+  .list-catalog--prod6 {
+
+    &::before {
+      top: -82px;
+      left: 68px;
+
+      width: 195px;
+      height: 208px;
+
+      background-position-x: -929px;
+    }
+  }
+
+  .list-catalog--prod7 {
+    margin-bottom: 0;
+
+    &::before {
+      top: -48px;
+      left: 83px;
+
+      width: 195px;
+      height: 208px;
+
+      background-position-x: -1134px;
+    }
+  }
+
+  .list-catalog__discription {
+    width: 100%;
+  }
+
+  .list-catalog__order {
+    margin-bottom: 40px;
+  }
 }

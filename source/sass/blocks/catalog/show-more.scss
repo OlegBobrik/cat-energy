@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-end;
 
-  min-height: 208px;
+  padding-top: 81px;
 
   text-align: center;
 
@@ -63,4 +63,52 @@
 
 .show-more__button {
   margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 0;
+    padding-top: 166px;
+
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+
+    &::before  {
+      top: 55px;
+      left: 161px;
+
+      width: 2px;
+      height: 60px;
+    }
+
+    &::after  {
+      top: 83px;
+      left: 133px;
+
+      width: 60px;
+      height: 2px;
+    }
+  }
+
+  .show-more__title {
+    width: 150px;
+    margin-bottom: 24px;
+
+    font-size: 20px;
+  }
+
+  .show-more__text {
+    width: 172px;
+    margin-bottom: 87px;
+
+    font-size: $small;
+    line-height: 17px;
+  }
+
+  .show-more__button {
+    margin-bottom: 0;
+  }
 }

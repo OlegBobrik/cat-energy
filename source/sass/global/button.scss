@@ -38,3 +38,9 @@
     background-color: #ebebeb;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 100%;
+  }
+}

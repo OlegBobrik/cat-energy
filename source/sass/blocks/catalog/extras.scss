@@ -1,4 +1,5 @@
 .extras {
+  margin-bottom: 63px;
   @include padding;
 }
 
@@ -78,8 +79,8 @@
 
 .extras__promo {
   position: relative;
+
   min-height: 289px;
-  margin-bottom: 63px;
 
   &::before {
     content: "";
@@ -91,8 +92,24 @@
     width: 280px;
     height: 289px;
 
-    background-image: url("../img/mobile/catalog/gift-photo-mobile.jpg");
+    background-image: url("/img/mobile/catalog/gift-photo-mobile.jpg");
     background-size: 280px 289px;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: relative;
+    top: 5px;
+    left: 0;
+
+    display: block;
+    width: 55px;
+    height: 60px;
+    margin: 0 auto;
+
+    background-image: url("/img/svg/gift.svg");
+    background-size: 55px 60px;
     background-repeat: no-repeat;
   }
 }
@@ -110,4 +127,115 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .extras {
+    margin-bottom: 73px;
+  }
+
+  .extras__title {
+    margin-bottom: 75px;
+    padding-left: 38px;
+    padding-bottom: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    border-bottom: none;
+
+    &::before  {
+      content: "";
+
+      top: 17px;
+      right: -30px;
+
+      width: 327px;
+      height: 3px;
+    }
+
+    &::after  {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: -30px;
+
+      display: block;
+      width: 28px;
+      height: 3px;
+
+      background-color: #68b738;
+    }
+  }
+
+  .extras__list {
+    margin-bottom: 69px;
+
+    border-top: 1px solid #d9d9d9;
+  }
+
+  .extras__item {
+    margin-bottom: 0;
+
+    padding: 28px 36px 0 37px;
+    box-sizing: border-box;
+
+    border: 1px solid #d9d9d9;
+    border-top: none;
+  }
+
+  .extras__name {
+    width: 50%;
+    margin-bottom: 23px;
+    padding-left: 2px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extras__value,
+  .extras__price {
+    padding-top: 2px;
+
+    font-size: $small;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .extras__value {
+    flex-grow: 1;
+  }
+
+  .extras__price {
+    width: 94px;
+  }
+
+  .extras__order {
+    margin-bottom: 27px;
+  }
+
+  .extras__promo {
+    min-height: 200px;
+
+    &::before {
+      width: 708px;
+      height: 200px;
+
+      background-image: url("/img/tablet/gift-photo-tablet.jpg");
+      background-size: 708px 200px;
+    }
+
+    &::after {
+      left: 91px;
+
+      margin: 0;
+    }
+  }
+
+  .extras__text {
+    top: 72px;
+    left: 160px;
+
+    text-align: left;
+  }
 }

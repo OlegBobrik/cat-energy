@@ -4,9 +4,7 @@
 
 .catalog__title {
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 23px;
-  padding-left: 20px;
+  padding: 20px 20px 23px;
 
   font-family: $oswald;
   font-size: $big;
@@ -15,4 +13,21 @@
   color: $black;
 
   border-top: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 72px;
+  }
+
+  .catalog__title {
+    font-size: $biggest;
+    line-height: 60px;
+
+    margin-bottom: 156px;
+    padding: 0;
+    padding-left: 30px;
+
+    border-top: none;
+  }
 }

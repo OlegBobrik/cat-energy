@@ -30,6 +30,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .address--page-catalog {
+    padding-top: 66px;
+
+    background-color: #f2f2f2;
+  }
+
   .address__container {
     margin-bottom: 58px;
     padding: 0 72px;
