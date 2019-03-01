@@ -16,9 +16,15 @@ var positionIconX = -50;
 var positionIconY = -135;
 
 buttonMenu.addEventListener("click", function () {
-  menu.classList.toggle("main-nav--close");
+  menu.classList.toggle("main-nav--hidden");
   buttonMenu.classList.toggle("page-header__button-menu--close");
-})
+});
+
+window.addEventListener("resize", function() {
+  if (document.body.clientWidth > 768) {
+    menu.classList.remove("main-nav--hidden");
+  }
+});
 
 function check(radio) {
   radio.checked = true;
