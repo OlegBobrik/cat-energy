@@ -11,8 +11,6 @@
   line-height: 60px;
   font-weight: 400;
   color: $black;
-
-  border-top: 1px solid #ededed;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,5 +27,11 @@
     padding: 0;
 
     border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 81px;
   }
 }

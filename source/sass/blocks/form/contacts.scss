@@ -1,5 +1,11 @@
-.contacts__title {
-  font-size: $big;
-  line-break: 36px;
-  text-transform: none;
+.contacts__item {
+  margin-bottom: 14px;
+}
+
+.contacts__label {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }

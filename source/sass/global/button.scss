@@ -44,3 +44,13 @@
     width: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 245px;
+  }
+
+  .button--more {
+    width: 100%;
+  }
+}

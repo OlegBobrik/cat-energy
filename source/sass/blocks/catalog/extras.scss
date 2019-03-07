@@ -239,3 +239,93 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .extras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 86px;
+  }
+
+  .extras__title {
+    width: 100%;
+    padding-left: 0;
+
+    &::before {
+      right: -110px;
+
+      width: 957px;
+    }
+
+    &::after {
+      left: -110px;
+
+      width: 70px;
+    }
+  }
+
+  .extras__list {
+    width: 895px;
+    margin-bottom: 0;
+  }
+
+  .extras__item {
+    align-items: center;
+
+    padding: 15px 0 16px 0;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .extras__name {
+    width: 323px;
+  }
+
+  .extras__value,
+  .extras__price {
+    text-align: left;
+  }
+
+  .extras__price {
+    width: 81px;
+  }
+
+  .extras__name,
+  .extras__value,
+  .extras__price,
+  .extras__order {
+    margin-bottom: 0;
+  }
+
+  .extras__name,
+  .extras__value,
+  .extras__price {
+    padding-top: 7px;
+  }
+
+  .extras__promo {
+    width: 245px;
+
+    &::before {
+      width: 245px;
+      height: 289px;
+
+      background-image: url("/img/desktop/gift-photo-desktop.jpg");
+      background-size: 245px 289px;
+    }
+
+    &::after {
+      left: 96px;
+    }
+  }
+
+  .extras__text {
+    top: 187px;
+    left: 0;
+
+    text-align: center;
+  }
+}
