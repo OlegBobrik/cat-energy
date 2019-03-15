@@ -23,6 +23,7 @@ buttonMenu.addEventListener("click", function () {
 window.addEventListener("resize", function() {
   if (document.body.clientWidth > 768) {
     menu.classList.remove("main-nav--hidden");
+    buttonMenu.classList.remove("page-header__button-menu--close");
   }
 });
 
