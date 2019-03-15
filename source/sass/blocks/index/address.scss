@@ -1,3 +1,9 @@
+.address--bgcolor {
+  padding-top: 28px;
+
+  background-color: #f2f2f2;
+}
+
 .address__container {
   display: flex;
   justify-content: space-between;
@@ -30,10 +36,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .address--page-catalog {
+  .address--bgcolor {
     padding-top: 63px;
-
-    background-color: #f2f2f2;
   }
 
   .address__container {
@@ -72,7 +76,7 @@
     position: relative;
   }
 
-  .address--page-catalog {
+  .address--bgcolor {
     padding-top: 0;
   }
 

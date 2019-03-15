@@ -53,12 +53,12 @@
   }
 
   .site-list__link,
-  .site-list__link--white {
+  .site-list__link--bg {
     font-size: 20px;
     line-height: 24px;
   }
 
-  .site-list__link--white {
+  .site-list__link--bg {
     color: #ffffff;
 
     &:hover {
@@ -70,7 +70,7 @@
     }
   }
 
-  .site-list__link--active-white {
+  .site-list__link--active-bg {
     border-bottom-color: #ffffff;
 
     &:hover,

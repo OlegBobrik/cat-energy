@@ -118,6 +118,7 @@
       background-repeat: no-repeat;
     }
   }
+
   .slider__before,
   .slider__after {
     display: inline-block;
@@ -159,6 +160,20 @@
       border-radius: 50%;
       border: 1px solid #cdcdcd;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+      transition-duration: 0ms;
+    }
+
+    &:hover::after {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active::after {
+      top: -15px;
+      left: 198px;
+
+      border: 2px solid #68b738;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
     }
   }
 }

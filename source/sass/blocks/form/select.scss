@@ -1,13 +1,18 @@
 .select {
+  margin-bottom: 30px;
+
   font-family: $oswald;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+
+  background-color: #ffffff;
 }
 
 .select__title {
-  margin: 21px 0;
+  margin-top: 20px;
+  margin-bottom: 22px;
   @include padding;
 
   font-size: $big;
@@ -19,9 +24,44 @@
 .select__description {
   width: 270px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   @include padding;
 
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .select__title {
+    margin-bottom: 49px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .select__description {
+    width: 520px;
+    margin-bottom: 63px;
+    @include paddingForm;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .select {
+    @include padding;
+  }
+
+  .select__title {
+    padding: 0;
+  }
+
+  .select__description {
+    width: 387px;
+
+    padding: 0;
+  }
 }
