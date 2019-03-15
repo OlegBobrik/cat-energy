@@ -9,6 +9,7 @@
   </script>
   <title>Подбор программы</title>
 </head>
+
   <body>
 
     <header class="page-header">
@@ -53,79 +54,93 @@
             <fieldset class="form-select__fieldset form-select__fieldset--characters">
               <legend class="visually-hidden">Данные животного</legend>
               <div class="form-select__line">
-                <label class="form-select__label" for="cat-name">Имя:*</label>
-                <input class="form-select__input input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
+                <label class="form-select__label form-select__label--name" for="cat-name">Имя:*</label>
+                <input class="form-select__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
               </div>
               <div class="form-select__line">
-                <label class="form-select__label" for="cat-weight">Вес (кг):*</label>
-                <input class="form-select__input input" id="cat-weight" type="text" name="cat-weight" placeholder="7">
+                <label class="form-select__label form-select__label--weight" for="cat-weight">Вес (кг):*</label>
+                <input class="form-select__input" id="cat-weight" type="number" name="cat-weight" min="1" placeholder="7" required>
               </div>
               <div class="form-select__line">
-                <label class="form-select__label" for="cat-age">Возраст (лет):</label>
-                <input class="form-select__input input" id="cat-age" type="text" name="cat-age" placeholder="7">
+                <label class="form-select__label form-select__label--age" for="cat-age">Возраст (лет):</label>
+                <input class="form-select__input" id="cat-age" type="number" name="cat-age" min="1" placeholder="7">
               </div>
             </fieldset>
 
             <fieldset class="form-select__fieldset form-select__fieldset--program">
               <legend class="visually-hidden">Выбор программы</legend>
-              <div class="form-select__line">
+              <div class="form-select__line form-select__line--program">
                 <input class="form-select__input form-select__input--program" id="lose-weight" name="program" type="radio" value="lose-weight" checked>
                 <label class="form-select__label form-select__label--program" for="lose-weight">Похудение</label>
               </div>
-              <div class="form-select__line">
+              <div class="form-select__line form-select__line--program">
                 <input class="form-select__input form-select__input--program" id="weight-set" name="program" type="radio" value="weight-set">
                 <label class="form-select__label form-select__label--program" for="weight-set">Набор массы</label>
               </div>
-              <div class="form-select__line">
+              <div class="form-select__line form-select__line--program">
                 <input class="form-select__input form-select__input--program" id="uncertainty" name="program" type="radio" value="uncertainty">
                 <label class="form-select__label form-select__label--program" for="uncertainty">Не знаю (нужен ваш совет)</label>
               </div>
             </fieldset>
 
             <fieldset class="form-select__fieldset form-select__fieldset--contacts">
-              <legend class="form-select__title">Контактные данные (кладелец кота)</legend>
-              <div class="form-select__line">
-                <label class="form-select__label" for="e-mail">E-mail:*</label>
-                <input class="form-select__input input" id="e-mail" type="email" name="e-mail" placeholder="kuklachev@gmail.com">
-              </div>
-              <div class="form-select__line">
-                <label class="form-select__label" for="tel">Телефон:*</label>
-                <input class="form-select__input input" id="tel" type="tel" name="phone-number" placeholder="8 (960) 900-60-90">
+              <legend class="form-select__title">
+                <span class="form-select__span">Контактные данные<br> (владельца кота)</span>
+              </legend>
+              <div class="form-select__container form-select__container--contacts">
+                <div class="form-select__line form-select__line--contacts">
+                  <label class="form-select__label form-select__label--email" for="e-mail">E-mail:*</label>
+                  <input class="form-select__input" id="e-mail" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                </div>
+                <div class="form-select__line form-select__line--contacts">
+                  <label class="form-select__label form-select__label--phone" for="tel">Телефон:*</label>
+                  <input class="form-select__input" id="tel" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
+                </div>
               </div>
             </fieldset>
 
             <fieldset class="form-select__fieldset form-select__fieldset--comment">
-              <legend class="form-select__title">Комментарий</legend>
-              <textarea class="form-select__textarea" name="comment" cols="30" rows="10"></textarea>
+              <legend class="form-select__title">
+                <span class="form-select__span">Комментарий</span>
+              </legend>
+              <textarea class="form-select__textarea" name="comment" cols="40" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
             <fieldset class="form-select__fieldset form-select__fieldset--additional">
-              <legend class="form-select__title">Дополнительно</legend>
-              <div class="form-select__line">
-                <input class="form-select__checkbox" id="sugar" name="sugar" type="checkbox" value="sugar" checked>
-                <label class="form-select__label" for="sugar">Сахарозаменитель</label>
-              </div>
-              <div class="form-select__line">
-                <input class="form-select__checkbox" id="water" name="water" type="checkbox" value="water">
-                <label class="form-select__label" for="water">Питьевая вода</label>
-              </div>
-              <div class="form-select__line">
-                <input class="form-select__checkbox" id="milk" name="milk" type="checkbox" value="milk">
-                <label class="form-select__label" for="milk">Молоко</span>
-              </div>
-              <div class="form-select__line">
-                <input class="form-select__checkbox" id="vitamins" name="vitamins" type="checkbox" value="vitamins">
-                <label class="form-select__label" for="vitamins">Витамины</label>
+              <legend class="form-select__title form-select__title--additional">
+                <span class="form-select__span">Дополнительно</span>
+              </legend>
+              <div class="form-select__container">
+                <div class="form-select__line form-select__line--additional">
+                  <input class="form-select__checkbox form-select__checkbox--additional" id="sugar" name="sugar" type="checkbox" value="sugar" checked>
+                  <label class="form-select__label form-select__label--additional" for="sugar">Сахарозаменитель</label>
+                </div>
+                <div class="form-select__line form-select__line--additional">
+                  <input class="form-select__checkbox form-select__checkbox--additional" id="water" name="water" type="checkbox" value="water">
+                  <label class="form-select__label form-select__label--additional" for="water">Питьевая вода</label>
+                </div>
+                <div class="form-select__line form-select__line--additional">
+                  <input class="form-select__checkbox form-select__checkbox--additional" id="milk" name="milk" type="checkbox" value="milk">
+                  <label class="form-select__label form-select__label--additional" for="milk">Молоко</span>
+                </div>
+                <div class="form-select__line form-select__line--additional">
+                  <input class="form-select__checkbox form-select__checkbox--additional" id="vitamins" name="vitamins" type="checkbox" value="vitamins">
+                  <label class="form-select__label form-select__label--additional" for="vitamins">Витамины</label>
+                </div>
               </div>
             </fieldset>
 
-            <input class="form-select__button button" type="submit" value="Отправить заявку">
-            <span class="form-select__note"><sup>*</sup>­­ ­− Обязательные поля</span>
+            <fieldset class="form-select__fieldset form-select__fieldset--submit">
+              <div class="form-select__container form-select__container--submit">
+                <input class="form-select__button button" type="submit" value="Отправить заявку">
+                <span class="form-select__note">*­­ ­— Обязательные поля</span>
+              </div>
+            </fieldset>
 
           </form>
         </section>
 
-        <section class="address">
+        <section class="address address--bgcolor">
           <h2 class="visually-hidden">Где мы находимся?</h2>
           <div class="address__container">
             <b class="address__coop">Приглашаем<br> к сотрудничеству дилеров!</b>
@@ -149,19 +164,19 @@
         </p>
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social_line">
+            <li class="social__item">
               <a class="social__link" href="#">
                 <span class="visually-hidden">В Контакте</span>
                 <img class="social__link--vk" src="img/svg/icon-vk.svg" width="22" height="16" alt="VK">
               </a>
             </li>
-            <li class="social_line">
+            <li class="social__item">
               <a class="social__link" href="#">
                 <span class="visually-hidden">Instagram</span>
                 <img class="social__link--in" src="img/svg/icon-insta.svg" width="16" height="16" alt="Instagram">
               </a>
             </li>
-            <li class="social_line">
+            <li class="social__item">
               <a class="social__link" href="#">
                 <span class="visually-hidden">Facebook</span>
                 <img class="social__link--fb" src="img/svg/icon-fb.svg" width="10" height="19" alt="Facebook">
